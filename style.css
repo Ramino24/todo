@@ -8,6 +8,10 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 .container {
@@ -129,4 +133,107 @@ input {
 
 .addBtn:hover {
   background-color: #bbb;
+}
+
+
+
+
+
+/* Theme toggle button */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: #1a1a1a;
+}
+
+.dark-mode .container {
+    background: gray;
+}
+
+.dark-mode .header {
+    background-color: grey;
+}
+
+.dark-mode ul li {
+    background: #3a3a3a;
+    color: #e0e0e0;
+}
+
+.dark-mode ul li:nth-child(odd) {
+    background: #404040;
+}
+
+.dark-mode ul li:hover {
+    background: #4a4a4a;
+}
+
+.dark-mode input {
+    background: #2d2d2d;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+.dark-mode .addBtn {
+    background: #4a4a4a;
+    color: #e0e0e0;
+}
+
+.dark-mode .addBtn:hover {
+    background-color: #555;
+}
+
+
+/* Fullscreen toggle button */
+.fullscreen-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #60a5fa;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.fullscreen-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Fullscreen styles */
+.fullscreen-mode {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    margin: 0;
+    background: #fff8e1;
+}
+
+.fullscreen-mode .container {
+    width: 80%;
+    height: 90%;
+    max-width: 800px;
+}
+
+/* Dark mode fullscreen */
+body.dark-mode.fullscreen-mode {
+    background: #1a1a1a;
 }
